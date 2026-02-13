@@ -89,16 +89,16 @@
 
     <canvas id="petal-canvas"></canvas>
     
-    <audio id="music1" loop><source src="MUSIC_1_URL"></audio>
-    <audio id="music2" loop><source src="MUSIC_2_URL"></audio>
-    <audio id="sfx-click"><source src="CLICK_SOUND_URL"></audio>
-    <audio id="sfx-flip"><source src="FLIP_SOUND_URL"></audio>
+    <audio id="music1" loop><source src="SONG_1"></audio>
+    <audio id="music2" loop><source src="SONG_2"></audio>
+    <audio id="sfx-click"><source src="CLICK_SOUND"></audio>
+    <audio id="sfx-flip"><source src="FLIP_SOUND"></audio>
 
     <div id="screen-1" class="screen active-screen">
         <div class="glass-card">
-            <img src="INVITE_STICKER_URL" style="width:110px; margin-bottom:10px;">
-            <h1 style="font-family:'Great Vibes';">Hi Beautiful,</h1>
-            <p>Ayush has a special journey for you...</p>
+            <img src="MAIN_VALENTINE_STICKER" style="width:110px; margin-bottom:10px;">
+            <h1 style="font-family:'Great Vibes';">Hi Cutie pie,</h1>
+            <p>I have a special journey for you...</p>
             <button class="btn" onclick="start()">Begin Journey ❤️</button>
             <button class="btn btn-back" onclick="nextScreen(2)">No</button>
         </div>
@@ -106,8 +106,8 @@
 
     <div id="screen-2" class="screen">
         <div class="glass-card">
-            <img src="SAD_STICKER_URL" style="width:100px;">
-            <p>Wait, Ayush's heart would break! <br>Are you sure? 🥺</p>
+            <img src="HUMPH_CAT" style="width:100px;">
+            <p>Wait, my heart would break! <br>Are you sure? 🥺</p>
             <button class="btn" onclick="nextScreen(1)">Go Back</button>
             <button class="btn btn-back" onclick="nextScreen(3)">Stay No</button>
         </div>
@@ -115,7 +115,7 @@
 
     <div id="screen-3" class="screen">
         <div class="glass-card">
-            <img src="ANGRY_STICKER_URL" style="width:100px;">
+            <img src="ANGRY_CAT" style="width:100px;">
             <h1 style="font-size:2.5rem;">Unlock the Secret</h1>
             <input type="text" id="flower" placeholder="My favorite flower?" style="background:none; border:none; border-bottom:2px solid var(--rose); color:white; text-align:center; padding:10px; width:85%; outline:none; font-size:1.2rem; margin:20px 0;">
             <button class="btn" onclick="check()">Validate</button>
@@ -134,21 +134,21 @@
     </div>
 
     <div id="screen-5" class="screen">
-        <div class="memory-node" style="transform:rotate(-5deg);"><img src="PHOTO_URL_1"><p>My Favorite View.</p></div>
+        <div class="memory-node" style="transform:rotate(-5deg);"><img src="PHOTO_1"><p>My Favorite View.</p></div>
         <button class="btn btn-back" onclick="nextScreen(4)">Back to Vault</button>
     </div>
 
     <div id="screen-6" class="screen">
-        <div class="memory-node" style="transform:rotate(5deg);"><img src="PHOTO_URL_2"><p>Cherished Moment.</p></div>
+        <div class="memory-node" style="transform:rotate(5deg);"><img src="PHOTO_2"><p>Cherished Moment.</p></div>
         <button class="btn btn-back" onclick="nextScreen(4)">Back to Vault</button>
     </div>
 
     <div id="screen-7" class="screen">
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom: 25px;">
-            <div class="heart-box" style="width:135px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">Always</div></div>
-            <div class="heart-box" style="width:135px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">Forever</div></div>
-            <div class="heart-box" style="width:135px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">Mine</div></div>
-            <div class="heart-box" style="width:135px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">Soulmate</div></div>
+            <div class="heart-box" style="width:137px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">You Are Always Mine</div></div>
+            <div class="heart-box" style="width:137px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">Forever Together</div></div>
+            <div class="heart-box" style="width:137px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">I Yours</div></div>
+            <div class="heart-box" style="width:137px;" onclick="this.classList.toggle('flipped'); playFlipSound();"><div class="face face-front">?</div><div class="face face-back">Soulmate For Eternal</div></div>
         </div>
         <div style="display:flex; flex-direction:column; gap:5px;">
             <button class="btn btn-back" onclick="nextScreen(4)">Go Back</button>
@@ -158,10 +158,10 @@
 
     <div id="screen-8" class="screen scroll-area">
         <svg class="rope-svg"><path id="ropePath" class="rope-path" d=""/></svg>
-        <div class="memory-node node-left"><img src="M1_URL"><p>Where We Started</p></div>
-        <div class="memory-node node-right"><img src="M2_URL"><p>Our First Laugh</p></div>
-        <div class="memory-node node-left"><img src="M3_URL"><p>Through Everything</p></div>
-        <div class="memory-node node-right"><img src="M4_URL"><p>Our Beautiful Forever</p></div>
+        <div class="memory-node node-left"><img src="M1"><p>Where We Started</p></div>
+        <div class="memory-node node-right"><img src="M2"><p>Our First Laugh</p></div>
+        <div class="memory-node node-left"><img src="M3"><p>Through Everything</p></div>
+        <div class="memory-node node-right"><img src="M4"><p>Our Beautiful Forever</p></div>
         
         <h2 style="font-family:'Great Vibes'; font-size:3.8rem; color:var(--rose); margin:60px 0;">I Love You, Forever.</h2>
         <button class="btn" onclick="location.reload()" style="margin-bottom:100px;">Relive the Story</button>
